@@ -1,0 +1,79 @@
+.vocations {
+  padding: 120px 0;
+}
+
+.vocation__title {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.vocation__subtitle {
+  max-width: 521px;
+  margin: 0 auto;
+}
+
+.vocation__grid {
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vocation__title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/before/vocation_palms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 105.513px;
+  height: 81px;
+  top: -35px;
+  right: 188px;
+}
+
+.vocation__svg {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.vocation__item {
+  font-family: 'Poppins', sans-serif;
+}
+
+.vocationUnderPicture {
+  padding: 24px;
+}
+
+.nameLand {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.priseLand {
+  color: $orange;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3rem;
+}
+
+.bottomContentLeft,
+.bottomContentRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  color: $greylight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: rem 1.5;
+  padding-left: 14.5px;
+}
+
+.rate {
+  color: $greylight;
+  line-height: 1.5rem;
+  padding-left: 8px;
+}

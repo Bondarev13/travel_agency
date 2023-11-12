@@ -21,8 +21,8 @@ function pages() {
 
 
 function styles() {
-  return src('app/scss/**/*.scss')
-    .pipe(sass({ outputStyle: 'compressed' }))
+  return src('app/scss/*.scss')
+    .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(concat('main.min.css'))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream());

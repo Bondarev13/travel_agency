@@ -1,0 +1,90 @@
+.about {
+  padding: 120px 0;
+  background-color: $bggrey;
+  position: relative;
+}
+
+.abuot__box {
+  display: flex;
+  gap: 126px;
+  position: relative;
+}
+
+.about__left {
+  max-width: 390px;
+}
+
+.about__title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.aboutSpan {
+  padding-top: 48px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+
+.about__subtitle {
+  color: $greylight;
+  font-family: Roboto;
+  line-height: 2rem;
+  margin-bottom: 32px;
+}
+
+.clientCard {
+  position: relative;
+  max-width: 500px;
+  background-color: #fff;
+
+  &__comment {
+    padding: 28px 64px 34px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 34px;
+  }
+
+  &__land {
+    color: $greylight;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 34px;
+  }
+}
+
+.clientCard::after {
+  position: absolute;
+  content: '';
+  background-image: url('../../images/before/client__after.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 68px;
+  height: 68px;
+  left: -2rem;
+  top: -2rem;
+}
+
+
+.about::before {
+  position: absolute;
+  content: '';
+  background-image: url('../../images/before/aboutPlaints.png');
+  width: 168px;
+  height: 186px;
+  right: 350px;
+  top: 40px;
+}
+
+
+
+
+
+.cardClose {
+  display: none;
+}

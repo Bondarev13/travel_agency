@@ -1,0 +1,70 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Volkhov:wght@700&display=swap');
+
+
+
+  // font-family: 'Poppins', sans-serif;
+  // font-family: 'Volkhov', serif;
+
+
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: $dark;
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .button {
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.24);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: $orange;
+  }
+
+  .grid__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .upperContent,
+  .bottomContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .text__span {
+    color: $orange;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 4.4rem;
+  }
+
+  .section__title {
+    font-family: 'Volkhov', serif;
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 1.2rem;
+    text-align: center;
+
+    span {
+      color: $orange;
+    }
+  }
+
+  .section__subtitle {
+    color: $greylight;
+    font-size: 18px;
+    line-height: 1.7rem;
+    text-align: center;
+  }

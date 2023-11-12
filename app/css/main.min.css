@@ -1,5 +1,614 @@
-body{font-family:"Poppins",sans-serif}.container{max-width:1170px;margin:0 auto}a{color:inherit}
-*{padding:0px;margin:0px;border:none}*,*::before,*::after{box-sizing:border-box}a,a:link,a:visited{text-decoration:none}a:hover{text-decoration:none}aside,nav,footer,header,section,main{display:block}h1,h2,h3,h4,h5,h6,p{font-size:inherit;font-weight:inherit}ul,ul li{list-style:none}img{vertical-align:top}img,svg{max-width:100%;height:auto}address{font-style:normal}input,textarea,button,select{font-family:inherit;font-size:inherit;color:inherit;background-color:rgba(0,0,0,0)}input::-ms-clear{display:none}button,input[type=submit]{display:inline-block;box-shadow:none;background-color:rgba(0,0,0,0);background:none;cursor:pointer}input:focus,input:active,button:focus,button:active{outline:none}button::-moz-focus-inner{padding:0;border:0}label{cursor:pointer}legend{display:block}
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Volkhov:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-.nav{display:flex;justify-content:space-between;padding:32px 0}.menu__list{display:flex;gap:32px}.form__group{display:flex;gap:56px}
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.24);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #FA7436;
+}
+
+.grid__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.upperContent,
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__span {
+  color: #FA7436;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+
+.section__title {
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: 700px;
+  line-height: 1.2rem;
+  text-align: center;
+}
+.section__title span {
+  color: #FA7436;
+}
+
+.section__subtitle {
+  color: #666666;
+  font-size: 18px;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+.hero {
+  background-color: #FEFCFB;
+  margin-bottom: 120px;
+}
+
+.hero__middle {
+  margin-bottom: 56px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+.hero__middle-left {
+  max-width: 521px;
+}
+
+.hero__middle-left--title {
+  font-family: "Volkhov", serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 4.4rem;
+  margin-bottom: 32px;
+}
+
+.hero__span {
+  font-size: 64px;
+}
+
+.hero__middle-left--description {
+  color: #666666;
+  font-size: 20px;
+  line-height: 2.5rem;
+  margin-bottom: 64px;
+}
+
+.hero__middle-left--button {
+  padding: 14px 28px;
+  color: #FA7436;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--Primary-O, #FA7436);
+  background: #FFF;
+}
+
+.hero__bottom {
+  margin: 0 auto;
+  max-width: 841px;
+  padding: 32px 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+}
+
+.hero__registration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero__registration--item {
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.hero__registration--item::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/icons/icon-outline/arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 5px;
+  right: -15px;
+  top: 0.5rem;
+}
+
+.hero__registration--description {
+  color: #666666;
+  font-size: 12px;
+}
+
+.registration__button {
+  padding: 14px 28px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.logo__link {
+  display: flex;
+  gap: 10px;
+  font-family: "Volkhov", serif;
+  color: #222222;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.144px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 32px;
+}
+
+.menu__link {
+  line-height: 1.5rem;
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 56px;
+}
+
+.link__login {
+  color: #FA7436;
+}
+
+.link__singUp {
+  padding: 13px 49px;
+}
+
+.things_you_need {
+  padding: 120px 0;
+  background-color: #F7F8FC;
+}
+
+.things__title {
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.things__title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/before/plaints.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 179.897px;
+  height: 130.732px;
+  top: 0;
+  right: 66px;
+}
+
+.things__subtitle {
+  max-width: 482px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.wrapper__things {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.item__things {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  z-index: 2;
+  border-radius: 8px;
+  border: 2px solid rgba(102, 102, 102, 0.08);
+  background: #FFF;
+}
+
+.item__image {
+  margin-bottom: 48px;
+}
+
+.item__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.item__subtitle {
+  color: #666666;
+  line-height: 1.6rem;
+}
+
+.item-1::before,
+.item-3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/before/Vector-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #FFF8F5;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.item-2::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/before/Vector-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #FFF8F5;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.exlusive {
+  padding: 120px 0;
+}
+.exlusive__title {
+  margin-bottom: 24px;
+}
+.exlusive__subtitle {
+  margin: 0 auto 66px;
+  max-width: 433px;
+}
+
+.exclusive__grid-item {
+  border-radius: 8px;
+  border: 2px solid rgba(102, 102, 102, 0.08);
+  background: #FEFCFB;
+}
+
+.exclusive__img {
+  margin-bottom: 32px;
+}
+
+.upperContent {
+  margin: 0 16px 18px 16px;
+}
+
+.exclusive__Nameland {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.bottomContent {
+  margin: 0 16px 18px 16px;
+}
+.bottomContent__left {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 34px;
+}
+.bottomContent__left-img {
+  margin-right: 8px;
+}
+.bottomContent__left-land {
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2rem;
+}
+
+.box__arrows {
+  text-align: center;
+}
+
+.vocations {
+  padding: 120px 0;
+}
+
+.vocation__title {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.vocation__subtitle {
+  max-width: 521px;
+  margin: 0 auto;
+}
+
+.vocation__grid {
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vocation__title::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/before/vocation_palms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 105.513px;
+  height: 81px;
+  top: -35px;
+  right: 188px;
+}
+
+.vocation__svg {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.vocation__item {
+  font-family: "Poppins", sans-serif;
+}
+
+.vocationUnderPicture {
+  padding: 24px;
+}
+
+.nameLand {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.priseLand {
+  color: #FA7436;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3rem;
+}
+
+.bottomContentLeft,
+.bottomContentRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: rem 1.5;
+  padding-left: 14.5px;
+}
+
+.rate {
+  color: #666666;
+  line-height: 1.5rem;
+  padding-left: 8px;
+}
+
+.about {
+  padding: 120px 0;
+  background-color: #F7F8FC;
+  position: relative;
+}
+
+.abuot__box {
+  display: flex;
+  gap: 126px;
+  position: relative;
+}
+
+.about__left {
+  max-width: 390px;
+}
+
+.about__title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.aboutSpan {
+  padding-top: 48px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+.about__subtitle {
+  color: #666666;
+  font-family: Roboto;
+  line-height: 2rem;
+  margin-bottom: 32px;
+}
+
+.clientCard {
+  position: relative;
+  max-width: 500px;
+  background-color: #fff;
+}
+.clientCard__comment {
+  padding: 28px 64px 34px;
+}
+.clientCard__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 34px;
+}
+.clientCard__land {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 34px;
+}
+
+.clientCard::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/before/client__after.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 68px;
+  height: 68px;
+  left: -2rem;
+  top: -2rem;
+}
+
+.about::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/before/aboutPlaints.png");
+  width: 168px;
+  height: 186px;
+  right: 350px;
+  top: 40px;
+}
+
+.cardClose {
+  display: none;
+}

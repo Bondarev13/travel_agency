@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.logo__link {
+  display: flex;
+  gap: 10px;
+  font-family: 'Volkhov', serif;
+  color: $dark;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.144px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 32px;
+}
+
+.menu__link {
+  line-height: 1.5rem;
+
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 56px;
+}
+
+.link__login {
+  color: $orange;
+}
+
+.link__singUp {
+  padding: 13px 49px;
+}

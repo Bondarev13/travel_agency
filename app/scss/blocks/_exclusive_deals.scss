@@ -1,0 +1,64 @@
+.exlusive {
+  padding: 120px 0;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin: 0 auto 66px;
+    max-width: 433px;
+  }
+}
+
+
+
+.exclusive__grid {
+
+  &-item {
+    border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    background: #FEFCFB;
+  }
+}
+
+.exclusive__img {
+  margin-bottom: 32px;
+}
+
+.upperContent {
+  margin: 0 16px 18px 16px;
+}
+
+.exclusive__Nameland {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.bottomContent {
+  margin: 0 16px 18px 16px;
+
+  &__left {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 34px;
+  }
+
+  &__left-img {
+    margin-right: 8px;
+  }
+
+
+  &__left-land {
+    color: $greylight;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2rem;
+  }
+}
+
+.box__arrows {
+  text-align: center;
+}
