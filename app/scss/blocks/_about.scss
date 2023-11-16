@@ -70,15 +70,14 @@
   top: -2rem;
 }
 
-
-.about::before {
+.clientCard::before {
   position: absolute;
   content: '';
   background-image: url('../../images/before/aboutPlaints.png');
   width: 168px;
   height: 186px;
-  right: 350px;
-  top: 40px;
+  right: -35%;
+  top: -50%;
 }
 
 
